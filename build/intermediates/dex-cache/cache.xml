@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/SSRoman/Documents/DOCUMENTOS_AGUSTIN/PROYECTOS_ANDROID/AndroidStudioProjects/MyPasswords/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="630155dd26d0917e68322db8bf10c60e49656a6c">
+        <dex dex="/Users/SSRoman/Documents/DOCUMENTOS_AGUSTIN/PROYECTOS_ANDROID/AndroidStudioProjects/MyPasswords/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_cc149aa8d0baf336d01bd6b93a2d5163fac29c55/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/SSRoman/Documents/DOCUMENTOS_AGUSTIN/PROYECTOS_ANDROID/AndroidStudioProjects/MyPasswords/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/SSRoman/Documents/DOCUMENTOS_AGUSTIN/PROYECTOS_ANDROID/AndroidStudioProjects/MyPasswords/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_19250816c43f19d78d4847f267d19d686088801c/classes.dex" />
+    </item>
+
+</items>
