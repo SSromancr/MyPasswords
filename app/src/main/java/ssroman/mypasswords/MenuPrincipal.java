@@ -16,10 +16,19 @@ public class MenuPrincipal extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+
+        Button salvar = (Button)findViewById(R.id.btnSalvar);
         Button guardar = (Button)findViewById(R.id.btnGuardar);
         Button modificar = (Button)findViewById(R.id.btnModificar);
         Button buscar = (Button)findViewById(R.id.btnBuscar);
         Button borrar = (Button)findViewById(R.id.btnBorrar);
+
+        salvar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MenuPrincipal.this, SalvarPW.class));
+            }
+        });
 
         guardar.setOnClickListener(new View.OnClickListener() {
             @Override

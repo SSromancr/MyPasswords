@@ -41,12 +41,15 @@ public class Register extends AppCompatActivity {
                 String password=editTextPassword.getText().toString();
                 String confirmPassword=editTextConfirmPassword.getText().toString();
 
+
                 // check if any of the fields are vaccant
                 if(userName.equals("")||password.equals("")||confirmPassword.equals(""))
                 {
                     Toast.makeText(getApplicationContext(), "Rellene los campos solicitados", Toast.LENGTH_LONG).show();
                     return;
                 }
+
+
                 // check if both password matches
                 if(!password.equals(confirmPassword))
                 {

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ssroman.mypasswords.BorrarPW">
+    tools:context="ssroman.mypasswords.SalvarPW">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/barra"
@@ -21,7 +21,8 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_borrar_pw" />
+    <include layout="@layout/content_salvar_pw" />
+
     <LinearLayout
         android:layout_below="@id/barra"
         android:layout_width="match_parent"
@@ -30,23 +31,31 @@
         android:layout_marginTop="10dp">
 
         <TextView
-            android:id="@+id/textViewBorrarPw"
+            android:id="@+id/textViewSPW"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Borrar Contraseña"
+            android:text="Guardar Contraseña"
             android:textSize="30sp" />
 
         <EditText
-            android:id="@+id/etIDBorrar"
+            android:id="@+id/etIDSW"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:ems="10"
-            android:hint="Id: Casa, Móvil, WiFi..."
-            />
+            android:hint="Id: Casa, Móvil, WiFi..." />
 
+        <EditText
+            android:id="@+id/etpasswordSPW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:textSize="18sp" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -57,12 +66,12 @@
             android:layout_marginRight="10dp">
 
             <Button
-                android:id="@+id/btnBorrarBD"
+                android:id="@+id/btnGuardarSPW"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:text="Borrar Contraseña" />
+                android:text="Guardar Contraseña" />
 
         </LinearLayout>
 

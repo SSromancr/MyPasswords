@@ -10,4 +10,6 @@
     <string name="title_activity_modificar_pw">ModificarPW</string>
     <string name="title_activity_buscar_pw">BuscarPW</string>
     <string name="title_activity_borrar_pw">BorrarPw</string>
+    <string name="title_activity_ayuda_bd">AyudaBD</string>
+    <string name="title_activity_salvar_pw">SalvarPw</string>
 </resources>

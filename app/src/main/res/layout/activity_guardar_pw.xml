@@ -35,11 +35,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Guardar Nueva Contraseña"
-            android:textSize="30sp" />
+            android:text="Guardar Contraseña Aleatoria"
+            android:textSize="24sp" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/etId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -48,60 +48,15 @@
             android:layout_marginRight="10dp"
              />
 
-        <EditText
-            android:id="@+id/editText2"
+        <TextView
+            android:id="@+id/etpassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Introduce contraseña"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-             />
-
-        <Button
-            android:id="@+id/btnGuardarPW"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Guardar Contraseña"
-            android:layout_gravity="center"/>
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Generar contraseña aleatoria"
-            android:textSize="18sp"
-            android:layout_marginTop="20dp"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp">
-
-            <CheckBox
-                android:id="@+id/cbNumeros"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Números" />
-
-            <CheckBox
-                android:id="@+id/cbMayus"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Mayúsculas" />
-
-            <CheckBox
-                android:id="@+id/cbMinus"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Minúsculas" />
-        </LinearLayout>
+            android:ems="10"
+            android:hint="Contraseña"
+            android:textSize="18sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -121,17 +76,35 @@
                 android:id="@+id/numCaracteres"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginRight="10dp"
+                android:inputType="number" />
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/btnPWAleatoria"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Generar Contraseña"
-            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <Button
+                android:id="@+id/btnPWAleatoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Generar Contraseña" />
+
+            <Button
+                android:id="@+id/btnGuardarPW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Guardar Contraseña" />
+
+        </LinearLayout>
 
     </LinearLayout>
 

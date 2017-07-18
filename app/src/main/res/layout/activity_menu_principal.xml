@@ -30,6 +30,8 @@
     android:orientation="vertical"
     android:layout_below="@+id/barra"
     android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
     >
 
     <TextView
@@ -42,29 +44,35 @@
         android:layout_marginBottom="20dp"/>
 
     <Button
-        android:id="@+id/btnGuardar"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnSalvar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Guardar contraseña"
+        android:text="Guardar Contraseña" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear Contraseña Aleatoria"
         android:layout_gravity="center"/>
 
     <Button
         android:id="@+id/btnModificar"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Modificar contraseña"
         android:layout_gravity="center"/>
 
     <Button
         android:id="@+id/btnBuscar"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Buscar contraseña"
         android:layout_gravity="center"/>
 
     <Button
         android:id="@+id/btnBorrar"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Borrar contraseña"
         android:layout_gravity="center"/>
