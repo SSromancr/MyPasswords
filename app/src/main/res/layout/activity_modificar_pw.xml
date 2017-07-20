@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -23,8 +24,14 @@
 
     <include layout="@layout/content_modificar_pw" />
 
-    <LinearLayout
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_below="@id/barra"
+        android:background="@android:color/holo_orange_light">
+
+    <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -36,6 +43,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Modificar Contraseña"
+            android:textAllCaps="false"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold|italic"
             android:textSize="30sp" />
 
         <EditText
@@ -71,12 +81,29 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:text="Actualizar" />
+                android:text="Actualizar"
+                android:backgroundTint="@android:color/holo_green_light"/>
 
         </LinearLayout>
 
     </LinearLayout>
 
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal">
 
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id"></com.google.android.gms.ads.AdView>
+    </LinearLayout>
 
 </RelativeLayout>

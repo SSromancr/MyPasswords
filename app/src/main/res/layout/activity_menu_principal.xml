@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -23,12 +24,17 @@
 
     <include layout="@layout/content_menu_principal" />
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/barra"
+        android:background="@android:color/holo_orange_light">
+
 
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:layout_below="@+id/barra"
     android:layout_marginTop="20dp"
     android:layout_marginLeft="20dp"
     android:layout_marginRight="20dp"
@@ -40,44 +46,70 @@
         android:layout_height="wrap_content"
         android:text="MENÚ PRINCIPAL"
         android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_blue_dark"
         android:textSize="30sp"
-        android:layout_marginBottom="20dp"/>
+        android:textStyle="bold|italic"/>
 
     <Button
         android:id="@+id/btnSalvar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Guardar Contraseña" />
+        android:text="Guardar Contraseña"
+        android:backgroundTint="@android:color/holo_green_light"/>
 
     <Button
         android:id="@+id/btnGuardar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Crear Contraseña Aleatoria"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:backgroundTint="@android:color/holo_green_light"/>
 
     <Button
         android:id="@+id/btnModificar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Modificar contraseña"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:backgroundTint="@android:color/holo_green_light"/>
 
     <Button
         android:id="@+id/btnBuscar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Buscar contraseña"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:backgroundTint="@android:color/holo_green_light"/>
 
     <Button
         android:id="@+id/btnBorrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Borrar contraseña"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:backgroundTint="@android:color/holo_green_light"/>
 
 </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id"></com.google.android.gms.ads.AdView>
+    </LinearLayout>
 
 
 </RelativeLayout>

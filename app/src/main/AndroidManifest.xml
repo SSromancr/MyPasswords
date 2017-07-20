@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ssroman.mypasswords">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -62,6 +65,18 @@
         <activity
             android:name=".SalvarPW"
             android:label="@string/title_activity_salvar_pw"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AcercaPopup"
+            android:label="@string/title_activity_acerca_popup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EmailActivity"
+            android:label="@string/title_activity_email"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MasApps"
+            android:label="@string/title_activity_mas_apps"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

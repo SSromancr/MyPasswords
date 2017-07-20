@@ -1,15 +1,22 @@
 <resources>
-    <string name="app_name">MyPasswords</string>
+    <string name="app_name">My Passwords</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_login">Login</string>
     <string name="title_activity_register">Register</string>
     <string name="title_activity_data_base_helper">DataBaseHelper</string>
     <string name="title_activity_login_data_base_adapter">LoginDataBaseAdapter</string>
-    <string name="title_activity_menu_principal">MenuPrincipal</string>
-    <string name="title_activity_guardar_pw">GuardarPW</string>
-    <string name="title_activity_modificar_pw">ModificarPW</string>
-    <string name="title_activity_buscar_pw">BuscarPW</string>
-    <string name="title_activity_borrar_pw">BorrarPw</string>
+    <string name="title_activity_menu_principal">Menú Principal</string>
+    <string name="title_activity_guardar_pw">Contraseña aleatoria</string>
+    <string name="title_activity_modificar_pw">Modificar contraseña</string>
+    <string name="title_activity_buscar_pw">Buscar contraseña</string>
+    <string name="title_activity_borrar_pw">Borrar contraseña</string>
     <string name="title_activity_ayuda_bd">AyudaBD</string>
-    <string name="title_activity_salvar_pw">SalvarPw</string>
+    <string name="title_activity_salvar_pw">Guardar contraseña</string>
+    <string name="title_activity_acerca_popup">AcercaPopup</string>
+    <string name="title_activity_email">EmailActivity</string>
+    <string name="title_activity_mas_apps">Más Apps</string>
+    <string name="calculadora">Calculadora científica con diferentes funcionalidades</string>
+    <string name="appleatorios">Aplicación que genera diversos tipos de eventos aleatorios: números, moneda, dado, contraseña, etc...</string>
+    <string name="areas_y_perimetros">App para aprender y calcular Áreas y Perímetros de polígonos y circunferencias</string>
+    <string name="banner_ad_unit_id"> ca-app-pub-8445363721982344/1690637112</string>
 </resources>
